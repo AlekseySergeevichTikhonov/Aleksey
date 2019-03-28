@@ -1,21 +1,15 @@
 #include <iostream>
-#include <stdio.h>
 using namespace std;
-int main()
-{
-    int a = 0;
-    float m[a];
-    float S = 0;
-
-    cout<<"Введите количество элементов в массиве:";
-    cin >>a;
-    cout<<"Введите элементы массива:";
-    for (int i=0; i<a; i++) {
-        cin>>m[i];
+int main(int argc, char** argv)
+{   
+    int r = 0;
+    double S = 0;
+    double m[]= {17,23,22,32,33,97,56,44,62,83};
+    for (double n : m) {
+        S = S + n;
+        r = r + 1;
     }
-    for (int i=0; i<a; i++) {
-        S = S +m[i];
-    }
-    cout<<"Среднее арифметическое="<< S/a << endl;
+    double sr = S/r;
+    cout<< sr << endl;
     return 0;
 }
