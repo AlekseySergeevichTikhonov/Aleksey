@@ -48,16 +48,3 @@ int main()
     s.PrintRoots();
     return 0;
 }
-    String string1, string2, Result;
-
-    cout << "Введите первую строку: ";
-    cin >> string1;
-
-    cout << "Введите вторую строку: ";
-    cin >> string2;
-
-    cout << string1 << " + " << string2;
-    Result = string1 + string2;
-    cout << " = " << Result << endl;
-
-    return 0;
